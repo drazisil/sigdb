@@ -27,6 +27,21 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+      - run: |
+          curl https://keybase.io/codecovsecurity/pgp_keys.asc | gpg --import # One time step
+
+          curl -Os https://uploader.codecov.io/latest/codecov-linux
+
+          curl -Os https://uploader.codecov.io/latest/codecov-linux.SHA256SUM
+
+          curl -Os https://uploader.codecov.io/latest/codecov-linux.SHA256SUM.sig
+
+          gpg --verify codecov-linux.SHA256SUM.sig codecov-linux.SHA256SUM
+
+          shasum -a 256 -c codecov-linux.SHA256SUM
+
+          chmod +x codecov-linux
+          ./codecov-linux -t c72be71a-17c2-4757-ae38-ab9ffe1a71b3 -Z -n ${{ matrix.node-version }}.v2 -F ${{ matrix.node-version }}.v2 -v
       - name: Codecov
         # You may pin to the exact commit or the version.
         # uses: codecov/codecov-action@29386c70ef20e286228c72b668a06fd0e8399192
