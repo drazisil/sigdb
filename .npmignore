@@ -1,0 +1,6 @@
+.eslintrc
+.github
+.nyc_output
+.prettierrc
+.taprc
+coverage
