@@ -1,4 +1,4 @@
-const { SigDB } = require('../lib')
+const { SigDB } = require('../')
 const tap = require('tap')
 
 const sigDB = new SigDB()

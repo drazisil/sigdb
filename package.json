@@ -2,11 +2,11 @@
   "name": "sigdb",
   "version": "1.0.3",
   "description": "A file signature database manager",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint --fix",
     "prepare": "husky install",
-    "test": "npx tap"
+    "test": "tap"
   },
   "repository": {
     "type": "git",
