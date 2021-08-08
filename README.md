@@ -33,7 +33,29 @@ const sigdb = await createSignatureDatabase()
 ```javascript
   /**
    * Get an array of signature names in the database
+   * @memberof SigDB
    * @returns {string[]}
    */
   getSignatureNames(): string[] 
+```
+
+```javascript
+  /**
+   * Add a file signature
+   * @param {string} id 
+   * @param {string} name 
+   * @param {Buffer} signature 
+   */
+  addFileSignature(id, name, signature): void 
+```
+
+## Types
+
+```javascript
+/**
+ * @typedef FileSignatureRecord
+ * @property {string} id
+ * @property {Buffer} signature
+ * @property {String} name
+ */
 ```
