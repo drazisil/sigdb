@@ -1,3 +1,4 @@
+reporter: specy
 coverage-report: ['text', 'cobertura']
 nyc-arg:
     - --useSpawnWrap
