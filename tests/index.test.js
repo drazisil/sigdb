@@ -14,4 +14,9 @@ tap.test('Signature Database', async (t) => {
     sigs.find(Buffer.from([0x21, 0x3c, 0x61, 0x72, 0x63, 0x68, 0x3e])).name,
     'ar archive', 'Can locate and match a file signature'
   )
+
+  tap.equal(
+    sigs.getSignatureNames().length,
+    4, 'Can get an array of file signatures in the database'
+  )
 })
