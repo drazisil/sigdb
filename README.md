@@ -29,3 +29,11 @@ const sigdb = await createSignatureDatabase()
    */
   find(haystack: Buffer): FileSignatureRecord | undefined
 ```
+
+```javascript
+  /**
+   * Get an array of signature names in the database
+   * @returns {string[]}
+   */
+  getSignatureNames(): string[] 
+```
