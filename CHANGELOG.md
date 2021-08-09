@@ -2,6 +2,10 @@
 
 ## 3.0
 
+### 3.0.1
+
+Confirmed there is no breakage between the 3.x and 2.1.0 versions
+
 ### 3.0.0
 
 Marking this a major in case it breaks. the API is the same, it starts life as typescript now.
