@@ -1,19 +1,14 @@
-// @ts-check
-
-/**
- * @module SigDB
- * @namespace SigDB
- */
-
-/**
- * @typedef FileSignatureRecord
- * @property {string} id
- * @property {Buffer} signature
- * @property {String} name
- */
+export interface FileSignatureRecord {
+    id: string
+    name: string
+    signature: Buffer  
+}
 
 /** Class for manager file signatures (sometimes known as magic numbers) */
-class SigDB {
+export class SigDB {
+  private fileSignatures: FileSignatureRecord[]
+
+  /** @deprecated please use loadSignatureDatabase() instead */
   constructor() {
     /** @type {FileSignatureRecord[]} */
     this.fileSignatures = [
@@ -47,7 +42,7 @@ class SigDB {
    * @memberof SigDB
    * @returns FileSignatureRecord | undefined
    */
-  find(haystack) {
+  find(haystack: Buffer): FileSignatureRecord | undefined {
     return this.fileSignatures.find(sig => {
       return sig.signature.equals(haystack.slice(0, sig.signature.length))
     })
@@ -58,7 +53,7 @@ class SigDB {
    * @memberof SigDB
    * @returns {string[]}
    */
-  getSignatureNames() {
+  getSignatureNames(): string[] {
     const results = []
     for (const entry of this.fileSignatures) {
       results.push(entry.name)
@@ -72,17 +67,12 @@ class SigDB {
    * @param {string} name 
    * @param {Buffer} signature 
    */
-  addFileSignature(id, name, signature) {
+  addFileSignature(id: string, name: string, signature: Buffer): void {
     this.fileSignatures.push({id, name, signature})
   }
 }
 
-async function loadSignatureDatabase() {
+export function loadSignatureDatabase(): SigDB {
   return new SigDB()
 }
 
-module.exports = {
-  /** @deprecated please use loadSignatureDatabase() instead */
-  SigDB,
-  loadSignatureDatabase,
-}
