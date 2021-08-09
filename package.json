@@ -1,6 +1,6 @@
 {
   "name": "sigdb",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A file signature database manager",
   "main": "dest/index.js",
   "scripts": {
