@@ -9,7 +9,7 @@
       "version": "3.0.1",
       "license": "MIT",
       "devDependencies": {
-        "@types/node": "16.11.40",
+        "@types/node": "16.11.41",
         "@types/tap": "15.0.7",
         "eslint": "8.17.0",
         "eslint-config-prettier": "8.5.0",
@@ -561,9 +561,9 @@
       "dev": true
     },
     "node_modules/@types/node": {
-      "version": "16.11.40",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.40.tgz",
-      "integrity": "sha512-7bOWglXUO6f21NG3YDI7hIpeMX3M59GG+DzZuzX2EkFKYUnRoxq3EOg4R0KNv2hxryY9M3UUqG5akwwsifrukw==",
+      "version": "16.11.41",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.41.tgz",
+      "integrity": "sha512-mqoYK2TnVjdkGk8qXAVGc/x9nSaTpSrFaGFm43BUH3IdoBV0nta6hYaGmdOvIMlbHJbUEVen3gvwpwovAZKNdQ==",
       "dev": true
     },
     "node_modules/@types/tap": {
@@ -5981,9 +5981,9 @@
       "dev": true
     },
     "@types/node": {
-      "version": "16.11.40",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.40.tgz",
-      "integrity": "sha512-7bOWglXUO6f21NG3YDI7hIpeMX3M59GG+DzZuzX2EkFKYUnRoxq3EOg4R0KNv2hxryY9M3UUqG5akwwsifrukw==",
+      "version": "16.11.41",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-16.11.41.tgz",
+      "integrity": "sha512-mqoYK2TnVjdkGk8qXAVGc/x9nSaTpSrFaGFm43BUH3IdoBV0nta6hYaGmdOvIMlbHJbUEVen3gvwpwovAZKNdQ==",
       "dev": true
     },
     "@types/tap": {
