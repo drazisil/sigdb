@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/drazisil/sigdb#readme",
   "devDependencies": {
-    "@types/node": "16.18.1",
+    "@types/node": "16.18.2",
     "@types/tap": "15.0.7",
     "eslint": "8.26.0",
     "eslint-config-prettier": "8.5.0",
