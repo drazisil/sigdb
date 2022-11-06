@@ -34,7 +34,7 @@
   "devDependencies": {
     "@types/node": "18.11.9",
     "@types/tap": "15.0.7",
-    "eslint": "8.26.0",
+    "eslint": "8.27.0",
     "eslint-config-prettier": "8.5.0",
     "husky": "8.0.1",
     "prettier": "2.7.1",
