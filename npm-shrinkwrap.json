@@ -9,7 +9,7 @@
       "version": "3.0.1",
       "license": "MIT",
       "devDependencies": {
-        "@types/node": "20.11.18",
+        "@types/node": "20.11.19",
         "@types/tap": "15.0.11",
         "eslint": "8.56.0",
         "eslint-config-prettier": "9.1.0",
@@ -654,9 +654,9 @@
       "dev": true
     },
     "node_modules/@types/node": {
-      "version": "20.11.18",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.11.18.tgz",
-      "integrity": "sha512-ABT5VWnnYneSBcNWYSCuR05M826RoMyMSGiFivXGx6ZUIsXb9vn4643IEwkg2zbEOSgAiSogtapN2fgc4mAPlw==",
+      "version": "20.11.19",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.11.19.tgz",
+      "integrity": "sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==",
       "dev": true,
       "dependencies": {
         "undici-types": "~5.26.4"
@@ -6300,9 +6300,9 @@
       "dev": true
     },
     "@types/node": {
-      "version": "20.11.18",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.11.18.tgz",
-      "integrity": "sha512-ABT5VWnnYneSBcNWYSCuR05M826RoMyMSGiFivXGx6ZUIsXb9vn4643IEwkg2zbEOSgAiSogtapN2fgc4mAPlw==",
+      "version": "20.11.19",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.11.19.tgz",
+      "integrity": "sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ==",
       "dev": true,
       "requires": {
         "undici-types": "~5.26.4"
